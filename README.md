@@ -110,7 +110,7 @@ Install BOTKUBE backend in Kubernetes cluster
  Add infracloud repository
 ```
     helm repo add infracloudio https://infracloudio.github.io/charts
-
+```
 Deploy BOTKUBE backend using helm install in your cluster
 ```   
     helm repo update
@@ -128,6 +128,7 @@ Deploy BOTKUBE backend using helm install in your cluster
 We will now get alerts on cluster operations like : pod/deployment/service creation or deletion or modification.
 We can also perform KUBECTL commands from slack :
 
+![Slack Channel](slack-channel.png)
 ```
     @BotKube get pods --namespace=monitoring
     @BotKube get services --namespace=monitoring
