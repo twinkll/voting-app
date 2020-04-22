@@ -125,7 +125,7 @@ Deploy BOTKUBE backend using helm install in your cluster
     --set image.tag=v0.9.1 \
     infracloudio/botkube
 ```
-![Slack Channel](slack.png)
+![Slack Channel](slack-channel.png)
 
 We will now get alerts on cluster operations like : pod/deployment/service creation or deletion or modification.
 We can also perform KUBECTL commands from slack :
