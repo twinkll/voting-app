@@ -1,10 +1,9 @@
 # Polling App on Google Cloud
-=========
 
 A simple distributed application.
 
-##Getting started
----------------
+## Getting started
+
 
 IF YOU WANT TO MAKE YOUR OWN DOCKER IMAGES –
 1.	Clone the project repository
