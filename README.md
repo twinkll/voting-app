@@ -4,7 +4,7 @@ A simple distributed application.
 
 ## Getting started
 
-## **YOU ONLY NEED A GOOGLE ACCOUNT FOR IT AND NOTHING LOCALLY**  
+### **YOU ONLY NEED A GOOGLE ACCOUNT FOR IT AND NOTHING LOCALLY**  
 
 IF YOU WANT TO MAKE YOUR OWN DOCKER IMAGES –
 1.	Clone the project repository
