@@ -4,7 +4,6 @@ A simple distributed application.
 
 ## Getting started
 
-### **YOU ONLY NEED A GOOGLE ACCOUNT FOR IT AND NOTHING LOCALLY**  
 
 IF YOU WANT TO MAKE YOUR OWN DOCKER IMAGES –
 1.	Clone the project repository
@@ -27,6 +26,8 @@ You can refer my GIT repository - https://github.com/twinkll/polling-app-kuberne
 YOU CAN ALSO SKIP THE ABOVE STEPS AND USE MY DOCKER IMAGES AND KUBERNETES CONFIGURATION FILES
 
 ## NOW FOLLOW THESE STEPS –
+
+### **YOU ONLY NEED A GOOGLE ACCOUNT FOR IT AND NOTHING LOCALLY**  
 
 1.	Create a cluster on Google Kuberenetes Engine 
 
