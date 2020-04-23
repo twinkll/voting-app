@@ -11,14 +11,14 @@ https://github.com/twinkll/voting-app.git
 
 2.	Navigate to project directory 
 3.	Navigate to VOTE folder 
--	docker build -t <docker-username>/vote
--	docker push <docker-username>/vote
+-	docker build -t < docker-username >/vote
+-	docker push < docker-username >/vote
 4.	Navigate to RESULT folder
--	docker build -t <docker-username>/result
--	docker push <docker-username>/result
+-	docker build -t < docker-username >/result
+-	docker push < docker-username >/result
 5.	Navigate to WORKER folder
--	docker build -t <docker-username>/worker
--	docker push <docker-username>/worker
+-	docker build -t < docker-username >/worker
+-	docker push < docker-username >/worker
 
 CREATE KUBERNETES CONFIGURATION FILES –
 You can refer my GIT repository - https://github.com/twinkll/polling-app-kubernetes.git
