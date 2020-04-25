@@ -108,9 +108,9 @@ Copy and save this token
 
 After installing BotKube app to your Slack workspace, you could see a new bot user with the name “BotKube” added in your workspace. Add that bot to a Slack channel you want to receive notification in. (You can add it by inviting @BotKube in a channel)
 
-Install BOTKUBE backend in Kubernetes cluster
- We will be using helm to install BotKube in Kubernetes
- Add infracloud repository
+*Install BOTKUBE backend in Kubernetes cluster
+*We will be using helm to install BotKube in Kubernetes
+*Add infracloud repository
 ```
     helm repo add infracloudio https://infracloudio.github.io/charts
 ```
