@@ -96,7 +96,7 @@ kubectl port-forward --namespace polling-app prometheus-1-grafana-0 3000
 
 You can web preview to port 3000
 Grafana Username and Password can be found on the dashboard 
-![Grafana dashboard]
+![Grafana dashboard](grafana.png)
 
 ## ALERT SYSTEM
 
