@@ -11,14 +11,14 @@ https://github.com/twinkll/voting-app.git
 
 2.	Navigate to project directory 
 3.	Navigate to VOTE folder 
--	docker build -t <docker-username>/vote
--	docker push <docker-username>/vote
+-	docker build -t < docker-username >/vote .
+-	docker push < docker-username >/vote
 4.	Navigate to RESULT folder
--	docker build -t <docker-username>/result
--	docker push <docker-username>/result
+-	docker build -t < docker-username >/result .
+-	docker push < docker-username >/result
 5.	Navigate to WORKER folder
--	docker build -t <docker-username>/worker
--	docker push <docker-username>/worker
+-	docker build -t < docker-username >/worker .
+-	docker push < docker-username >/worker
 
 CREATE KUBERNETES CONFIGURATION FILES –
 You can refer my GIT repository - https://github.com/twinkll/polling-app-kubernetes.git
@@ -26,6 +26,9 @@ You can refer my GIT repository - https://github.com/twinkll/polling-app-kuberne
 YOU CAN ALSO SKIP THE ABOVE STEPS AND USE MY DOCKER IMAGES AND KUBERNETES CONFIGURATION FILES
 
 ## NOW FOLLOW THESE STEPS –
+
+## **PRE-REQUISITES**
+### YOU ONLY NEED A GOOGLE ACCOUNT FOR IT AND *NOTHING LOCAL*
 
 1.	Create a cluster on Google Kuberenetes Engine 
 
@@ -42,15 +45,15 @@ Open the CLOUD SHELL from top right corner and connect to the CLUSTER by enterin
 ```
 Create all deployments and services 
 ```    
-    Kubectl create -f voting-app-deployment.yaml
-    Kubectl create -f voting-app-service.yaml
-    Kubectl create -f result-app-deployment.yaml
-    Kubectl create -f result-app-service.yaml
-    Kubectl create -f worker-app-deployment.yaml
-    Kubectl create -f redis-deployment.yaml
-    Kubectl create -f redis-service.yaml
-    Kubectl create -f postgres-deployment.yaml
-    Kubectl create -f postgres-service.yaml
+    kubectl create -f voting-app-deployment.yaml
+    kubectl create -f voting-app-service.yaml
+    kubectl create -f result-app-deployment.yaml
+    kubectl create -f result-app-service.yaml
+    kubectl create -f worker-app-deployment.yaml
+    kubectl create -f redis-deployment.yaml
+    kubectl create -f redis-service.yaml
+    kubectl create -f postgress-deployment.yaml
+    kubectl create -f postgres-service.yaml
 ```
 FINAL RESULTING APPLICATION 
 ![Polling Application](vote.png)
@@ -84,16 +87,13 @@ Go to APPLICATIONS on Google Cloud Platform Kuberenetes Engine dashboard
 Configure
 ![Configure](application1.png)
 
-Deploy on GKE
-![Deploy on GKE](application2.png)
-
 It will automatically deploy YAML files on the cluster.
 Run Prometheus and Grafana – 
 kubectl port-forward --namespace polling-app prometheus-1-grafana-0 3000
 
 You can web preview to port 3000
 Grafana Username and Password can be found on the dashboard 
-![Grafana dashboard]
+![Grafana dashboard](grafana.png)
 
 ## ALERT SYSTEM
 
@@ -105,10 +105,12 @@ Copy and save this token
 
 After installing BotKube app to your Slack workspace, you could see a new bot user with the name “BotKube” added in your workspace. Add that bot to a Slack channel you want to receive notification in. (You can add it by inviting @BotKube in a channel)
 
-Install BOTKUBE backend in Kubernetes cluster
- We will be using helm to install BotKube in Kubernetes
- Add infracloud repository
+*Install BOTKUBE backend in Kubernetes cluster
+*We will be using helm to install BotKube in Kubernetes
+*Add infracloud repository
+
 ```
+    helm init
     helm repo add infracloudio https://infracloudio.github.io/charts
 ```
 Deploy BOTKUBE backend using helm install in your cluster
@@ -129,6 +131,7 @@ Deploy BOTKUBE backend using helm install in your cluster
 We will now get alerts on cluster operations like : pod/deployment/service creation or deletion or modification.
 We can also perform KUBECTL commands from slack :
 
+![Slack Channel](slack-channel.png)
 ```
     @BotKube get pods --namespace=monitoring
     @BotKube get services --namespace=monitoring
