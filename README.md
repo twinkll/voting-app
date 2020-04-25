@@ -85,7 +85,7 @@ Go to APPLICATIONS on Google Cloud Platform Kuberenetes Engine dashboard
 ![Application Dashboard](application.png)
 
 Configure
-![Configure](application1.png)
+![Configure](market.png)
 
 It will automatically deploy YAML files on the cluster.
 Run Prometheus and Grafana – 
@@ -127,7 +127,6 @@ Deploy BOTKUBE backend using helm install in your cluster
     infracloudio/botkube
 ```
 
-![Slack command](slack-command.png)
 We will now get alerts on cluster operations like : pod/deployment/service creation or deletion or modification.
 We can also perform KUBECTL commands from slack :
 
