@@ -87,9 +87,6 @@ Go to APPLICATIONS on Google Cloud Platform Kuberenetes Engine dashboard
 Configure
 ![Configure](application1.png)
 
-Deploy on GKE
-![Deploy on GKE](application2.png)
-
 It will automatically deploy YAML files on the cluster.
 Run Prometheus and Grafana – 
 kubectl port-forward --namespace polling-app prometheus-1-grafana-0 3000
