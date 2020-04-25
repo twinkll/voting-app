@@ -45,15 +45,15 @@ Open the CLOUD SHELL from top right corner and connect to the CLUSTER by enterin
 ```
 Create all deployments and services 
 ```    
-    kubectl create -f voting-app-deployment.yaml
-    kubectl create -f voting-app-service.yaml
-    kubectl create -f result-app-deployment.yaml
-    kubectl create -f result-app-service.yaml
-    kubectl create -f worker-app-deployment.yaml
-    kubectl create -f redis-deployment.yaml
-    kubectl create -f redis-service.yaml
-    kubectl create -f postgress-deployment.yaml
-    kubectl create -f postgres-service.yaml
+    kubectl create -f voting-app-deployment.yml
+    kubectl create -f voting-app-service.yml
+    kubectl create -f result-app-deployment.yml
+    kubectl create -f result-app-service.yml
+    kubectl create -f worker-app-deployment.yml
+    kubectl create -f redis-deployment.yml
+    kubectl create -f redis-service.yml
+    kubectl create -f postgress-deployment.yml
+    kubectl create -f postgres-service.yml
 ```
 FINAL RESULTING APPLICATION 
 ![Polling Application](vote.png)
