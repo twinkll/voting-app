@@ -111,7 +111,9 @@ After installing BotKube app to your Slack workspace, you could see a new bot us
 *Install BOTKUBE backend in Kubernetes cluster
 *We will be using helm to install BotKube in Kubernetes
 *Add infracloud repository
+
 ```
+    helm init
     helm repo add infracloudio https://infracloudio.github.io/charts
 ```
 Deploy BOTKUBE backend using helm install in your cluster
