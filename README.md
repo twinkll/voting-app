@@ -126,6 +126,11 @@ Deploy BOTKUBE backend using helm install in your cluster
     --set image.tag=v0.9.1 \
     infracloudio/botkube
 ```
+where,
+- SLACK_CHANNEL_NAME is the channel name where @BotKube is added
+- SLACK_API_TOKEN_FOR_THE_BOT is the Token you received after installing BotKube app to your Slack workspace
+- CLUSTER_NAME is the cluster name set in the incoming messages
+- ALLOW_KUBECTL set true to allow kubectl command execution by BotKube on the cluster
 
 We will now get alerts on cluster operations like : pod/deployment/service creation or deletion or modification.
 We can also perform KUBECTL commands from slack :
